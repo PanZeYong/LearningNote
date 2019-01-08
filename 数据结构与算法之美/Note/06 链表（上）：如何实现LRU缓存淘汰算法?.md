@@ -14,23 +14,23 @@
 
 单链表有两个比较特殊的结点：头结点和尾结点。头结点用来记录链表的基地址，数据域可以不存储任何信息，指针域存储第一个结点的地址；而尾结点是链表最后一个数据元素，数据域存储本身信息，但是指针域不再是指向下一个结点，而是指向空地址 NULL。
 
-![](/Users/Pan/Program/数据结构与算法之美/Note/images/linked_list.jpg)
+![](/Users/Pan/Program/LearningNote/数据结构与算法之美/Note/images/linked_list.jpg)
 
 ### 3、循环链表
 循环链表是一种特殊的单链表，它与单链表的区别在于：单链表尾节点的指针域指向的是空指针，而循环链表尾节点的指针域指向头结点，形成一个环，由于是单向的，也可以成为单循环链表。
 
-![](/Users/Pan/Program/数据结构与算法之美/Note/images/loop_linked_list.jpg)
+![](/Users/Pan/Program/LearningNote/数据结构与算法之美/Note/images/loop_linked_list.jpg)
 
 ### 4、双链表
 
 单链表只有一个方向，每个结点的指针域指向下一个结点，若要查找结点的前驱节结点，只能遍历整个链表，时间复杂度为 O(n)；而对于双链表，顾名思义，是双向的，即结点有前驱结点和后继结点，若要查找结点的前驱结点，可以通过结点的 prev 指针快速找到，时间复杂度为 O(1)，这是采用空间换时间的策略。
 
-![](/Users/Pan/Program/数据结构与算法之美/Note/images/double_linked_list.jpg)
+![](/Users/Pan/Program/LearningNote/数据结构与算法之美/Note/images/double_linked_list.jpg)
 
 ### 5、双向循环链表
 在双链表的基础上，尾结点的指针域指向头结点，形成一个环，称之为双向循环链表。
 
-![](/Users/Pan/Program/数据结构与算法之美/Note/images/double_loop_linked_list.jpg)
+![](/Users/Pan/Program/LearningNote/数据结构与算法之美/Note/images/double_loop_linked_list.jpg)
 
 ### 6、线性表实现方法比较
 
