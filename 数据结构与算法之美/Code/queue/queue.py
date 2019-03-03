@@ -1,6 +1,7 @@
 """
     基于数组实现，队列的基本操作
 """
+import  sys
 
 class Queue():
     def __init__(self, n):
@@ -71,6 +72,12 @@ class Queue():
         for index in range(self.size()):
             print('Vaule: %s ' % self.queue[index])
 
+    # def tailrecsum(self, x, running_total=0):
+    #     if x == 0:
+    #         return running_total
+    #     else:
+    #         return self.tailrecsum(x - 1, running_total + x)
+
 if __name__ == '__main__':
     # 初始化队列
     queue = Queue(10)
@@ -100,3 +107,6 @@ if __name__ == '__main__':
 
     # 遍历队列
     queue.traverse()
+
+    # sys.setrecursionlimit(100000)
+    # print(queue.tailrecsum(99999))
